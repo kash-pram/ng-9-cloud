@@ -5,5 +5,21 @@
     "@angular/common": "^9.0.5",
     "@angular/core": "^9.0.5",
     "tslib": "^1.10.0"
+  },
+  "license": "MIT",
+  "author":"PPM1988 <ppm1988@outlook.com>",
+  "description": "Angular 9 compatible rotating word cloud based on https://www.goat1000.com/tagcanvas.php",
+  "keywords": [
+  "angular","angular","angular2","angular 2","angular4","angular 8","angular8","tag cloud",
+  "tagcanvas","tag canvas","wordcloud","word cloud","angular word cloud","angular 9 word cloud",
+  "angular 8 word cloud","angular 8 wordcloud","angular 9 wordcloud","angular 9 tagcanvas",
+  "angular 9 tag canvas","angular 9 tag canvas"
+  ],
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ppm1988/ng-word-cloud.git"
+  },
+  "dependencies": {
+    "jquery-tagcanvas": "^2.9.0"
   }
 }

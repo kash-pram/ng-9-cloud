@@ -1,0 +1,9 @@
+<canvas #canvas [id]="canvasId"></canvas>
+<div [id]="tagListId" class="tag-container">
+	<!-- <a href *ngFor="let eachTag of tags"  [attr.data-weight]="eachTag.weight" (click)="tagClick.next(eachTag)">
+    {{ eachTag.text }}
+  </a> -->
+  <span *ngFor="let eachTag of tags">
+    {{eachTag.text}}
+  </span>
+</div>
