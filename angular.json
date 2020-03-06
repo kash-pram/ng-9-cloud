@@ -2,5 +2,46 @@
   "$schema": "./node_modules/@angular/cli/lib/config/schema.json",
   "version": 1, 
   "newProjectRoot": "projects",
-  "projects": {}
+  "projects": {
+    "ng-word-cloud": {
+      "projectType": "library",
+      "root": "projects/ng-word-cloud",
+      "sourceRoot": "projects/ng-word-cloud/src",
+      "prefix": "lib",
+      "architect": {
+        "build": {
+          "builder": "@angular-devkit/build-ng-packagr:build",
+          "options": {
+            "tsConfig": "projects/ng-word-cloud/tsconfig.lib.json",
+            "project": "projects/ng-word-cloud/ng-package.json"
+          },
+          "configurations": {
+            "production": {
+              "tsConfig": "projects/ng-word-cloud/tsconfig.lib.prod.json"
+            }
+          }
+        },
+        "test": {
+          "builder": "@angular-devkit/build-angular:karma",
+          "options": {
+            "main": "projects/ng-word-cloud/src/test.ts",
+            "tsConfig": "projects/ng-word-cloud/tsconfig.spec.json",
+            "karmaConfig": "projects/ng-word-cloud/karma.conf.js"
+          }
+        },
+        "lint": {
+          "builder": "@angular-devkit/build-angular:tslint",
+          "options": {
+            "tsConfig": [
+              "projects/ng-word-cloud/tsconfig.lib.json",
+              "projects/ng-word-cloud/tsconfig.spec.json"
+            ],
+            "exclude": [
+              "**/node_modules/**"
+            ]
+          }
+        }
+      }
+    }},
+  "defaultProject": "ng-word-cloud"
 }

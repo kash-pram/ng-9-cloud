@@ -14,7 +14,13 @@
     "lib": [
       "es2018",
       "dom"
-    ]
+    ],
+    "paths": {
+      "ng-word-cloud": [
+        "dist/ng-word-cloud/ng-word-cloud",
+        "dist/ng-word-cloud"
+      ]
+    }
   },
   "angularCompilerOptions": {
     "fullTemplateTypeCheck": true,
